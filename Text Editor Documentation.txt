@@ -1,0 +1,79 @@
+Title: Text Editor
+
+OverView:
+The Text Editor project is a straightforward Java-based notepad that features a graphical user interface, providing users with a versatile platform for various text-related activities. This application is designed to be user-friendly, allowing individuals to create and manage their notes efficiently. The key functionalities include creating new windows, opening and saving files, and performing essential text operations such as cutting, copying, pasting, and selecting all text.
+
+Prerequisites:
+Before running the Text Editor project, ensure the following prerequisites are met:
+
+Java Development Kit (JDK) installed.
+Integrated Development Environment (IDE) for Java (e.g., Eclipse, IntelliJ).
+Setup Instructions:
+Follow these steps to set up and run the Text Editor project:
+
+Clone the project repository.
+Open the project in your preferred Java IDE.
+Compile and run the TextEditor class.
+Project Structure:
+The project structure is organized as follows:
+
+src:
+TextEditor.java: Main class containing the implementation of the text editor.
+Libraries Used:
+The Text Editor project utilizes the Java Swing Library to create an intuitive graphical user interface.
+
+Class Overview:
+TextEditor Class:
+Properties:
+
+frame: JFrame for the text editor.
+menuBar: Menu bar for the frame.
+file, edit: Menus for file and edit options.
+newFile, openFile, saveFile: File menu items.
+cut, copy, paste, selectAll, close: Edit menu items.
+textArea: JTextArea for text input.
+Methods:
+
+TextEditor(): Constructor to initialize the text editor.
+actionPerformed(ActionEvent actionEvent): Handles actions triggered by menu items.
+Main Method:
+
+main(String[] args): Entry point to run the TextEditor.
+Functionality:
+Menus and Actions:
+File Menu:
+
+New Window: Opens a new instance of the TextEditor.
+Open File: Opens a file using a file chooser.
+Save File: Saves the content of the text area to a file.
+Edit Menu:
+
+Cut, Copy, Paste, Select All: Standard text editing operations.
+Close: Closes the application.
+Text Area and Scroll Pane:
+A JTextArea is used for text input.
+JScrollPane is added for scrollable text.
+ActionEvent Handling:
+The actionPerformed method handles ActionEvents triggered by menu items. Depending on the event source, corresponding text editing operations or file-related actions are performed.
+
+File I/O:
+Open File:
+
+Uses JFileChooser to select a file.
+Reads the content of the selected file and displays it in the text area.
+Save File:
+
+Uses JFileChooser to choose the save location.
+Writes the content of the text area to the selected file.
+Error Handling:
+File-related exceptions, such as file not found or IO exceptions, are caught and printed to the console for debugging purposes.
+
+Additional Notes:
+The editor's layout includes a menu bar, a text area, and a scroll pane for a user-friendly experience.
+Future improvements may include adding additional text editing features, enhancing the user interface, and optimizing file handling.
+Conclusion:
+The Text Editor project provides a simple yet effective platform for basic text editing operations and note-taking. Its intuitive graphical interface makes it accessible for users looking for a straightforward text editing experience.
+
+
+Pintu Giri
+Mrpintugiri@gmail.com
